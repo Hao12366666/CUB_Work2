@@ -3,7 +3,7 @@ package com.example.demo.service.impl;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -31,7 +31,7 @@ public class QueryRateServiceImpl implements QueryRateService {
 	@Override
 	public Map<String, Object> mainService(QueryRateReq queryRateReq) {
 
-		Map<String, Object> response = new HashMap<>();
+		Map<String, Object> response = new LinkedHashMap<>();
 		error error = new error();
 		if (!checkDate(queryRateReq)) {
 			error.setCode(RateCode.DATE_ERROR);
@@ -49,9 +49,10 @@ public class QueryRateServiceImpl implements QueryRateService {
 			error.setCode(RateCode.SUCCESS_STATUS_CODE);
 			error.setMessage(getMessage(RateCode.SUCCESS_STATUS_CODE));
 			response.put("error", error);
+
 			List<Map<String, String>> modifiedCurrencyList = new ArrayList<>();
 			for (currency currency : queryRateRes.getCurrency()) {
-				Map<String, String> modifiedCurrency = new HashMap<>();
+				Map<String, String> modifiedCurrency = new LinkedHashMap<>();
 				modifiedCurrency.put("date", currency.getDate());
 				modifiedCurrency.put(queryRateReq.getCurrency(), currency.getRate());
 				modifiedCurrencyList.add(modifiedCurrency);
