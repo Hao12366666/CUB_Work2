@@ -22,7 +22,8 @@
 
 2. POST Test
 查詢成功
-![圖片](https://github.com/Hao12366666/CUB_Work2/assets/61863640/fe5003dd-6b89-4e21-9d64-007b00bce460)
+![圖片](https://github.com/Hao12366666/CUB_Work2/assets/61863640/1cd42cb7-2201-459d-a94c-b4a69955a672)
+
 
 查詢範圍超過前一日
 ![圖片](https://github.com/Hao12366666/CUB_Work2/assets/61863640/d8d140b2-e875-48cc-bbbc-f90ef4ad22ab)
@@ -34,7 +35,8 @@
 ![圖片](https://github.com/Hao12366666/CUB_Work2/assets/61863640/e705720b-193b-4201-bc57-e87db56b076b)
 
 換幣值
-![圖片](https://github.com/Hao12366666/CUB_Work2/assets/61863640/d9a10411-80e8-458a-b951-ca11eb0ed2d8)
+![圖片](https://github.com/Hao12366666/CUB_Work2/assets/61863640/ec297f98-dda5-4788-90fb-60a95ddc19db)
+
 
 錯誤幣值
 ![圖片](https://github.com/Hao12366666/CUB_Work2/assets/61863640/d02696d5-a183-4ea7-8385-5069ae63bb29)
