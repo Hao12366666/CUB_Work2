@@ -59,9 +59,11 @@ public class RateRepoImpl implements RateRepo {
 			String endDateFormatted = queryFormatter.format(endDate);
 			// 將結束日期加上一天
 			String rate = "";
-			if ("USD".equals(queryRateReq.getCurrency().toUpperCase())) {
+			if (queryRateReq != null && queryRateReq.getCurrency() != null
+					&& "USD".equals(queryRateReq.getCurrency().toUpperCase())) {
 				rate = "USD/NTD";
-			} else if ("RMB".equals(queryRateReq.getCurrency().toUpperCase())) {
+			} else if (queryRateReq != null && queryRateReq.getCurrency() != null
+					&& "RMB".equals(queryRateReq.getCurrency().toUpperCase())) {
 				rate = "RMB/NTD";
 			} else {
 				return queryRateRes;
